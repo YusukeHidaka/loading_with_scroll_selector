@@ -1,0 +1,2 @@
+# loading_with_scroll_selector
+reactで書いた、１０００以上の選択肢を持ちながらサクサク進むセレクターです。（いつ使うの）
