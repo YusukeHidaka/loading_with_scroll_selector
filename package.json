@@ -1,0 +1,35 @@
+{
+  "name": "loading_with_scroll_selector",
+  "version": "1.0.0",
+  "description": "reactで書いた、１０００以上の選択肢を持ちながらサクサク進むセレクターです。（いつ使うの）",
+  "main": "index.js",
+  "scripts": {
+    "production": "webpack -p",
+    "develop": "webpack -d",
+    "watch": "webpack -d --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YusukeHidaka/loading_with_scroll_selector.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YusukeHidaka/loading_with_scroll_selector/issues"
+  },
+  "homepage": "https://github.com/YusukeHidaka/loading_with_scroll_selector#readme",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "lodash": "^4.17.4",
+    "webpack": "^2.5.1"
+  }
+}
