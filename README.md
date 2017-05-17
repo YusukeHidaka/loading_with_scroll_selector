@@ -10,11 +10,11 @@ reactで書いた、１０００以上の選択肢を持ちながらサクサク
 準備中
 
 ## Usage
-``npm i``
+``$ npm i``
 
-``npm run watch``
+``$ npm run watch``
 
-open index.html
+open ``index.html``
 
 ## Install
 

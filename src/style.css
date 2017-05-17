@@ -1,4 +1,7 @@
 /* loading_with_scroll_selector ライブラリ */
+.main-object{
+  margin:auto;
+}
 
 .selector {
   position: relative;
