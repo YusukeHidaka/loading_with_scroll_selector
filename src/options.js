@@ -2,9 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 export default class Options extends React.Component{
-
-  //100%だとheight分はみ出てしまうので
-  get currentPosition (){return this.props.currentPosition*80+'%'}
+  //barのheightを30%に設定してあるので
+  get currentPosition (){return this.props.currentPosition*70+'%'}
 
   constructor (props){
     super(props);

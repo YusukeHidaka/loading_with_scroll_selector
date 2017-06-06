@@ -17,7 +17,7 @@ class App extends React.Component{
     for(i=0;i<1000;i++){options.push({'key':i,'value':i+'です'})};
 
     return(
-      <div class="main-object" style={{width: this.selectorWidth}}>
+      <div className="main-object" style={{width: this.selectorWidth}}>
         <LoadingWithScrollSelector options={options} targetNumber={this.defaultValue}/>
       </div>
     )
