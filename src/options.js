@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import PropTypes from 'prop-types'
 
 export default class Options extends React.Component{
   //barのheightを30%に設定してあるので
@@ -37,9 +38,9 @@ export default class Options extends React.Component{
 }
 
 Options.propTypes = {
-  currentOptions: React.PropTypes.array,
-  selectedItem: React.PropTypes.number,
-  onSelected: React.PropTypes.func,
-  targetNumber: React.PropTypes.number,
-  currentPosition: React.PropTypes.number,
+  currentOptions: PropTypes.array,
+  selectedItem: PropTypes.number,
+  onSelected: PropTypes.func,
+  targetNumber: PropTypes.number,
+  currentPosition: PropTypes.number,
 };

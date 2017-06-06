@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { throttle } from 'lodash';
+import PropTypes from 'prop-types'
+import { throttle } from 'lodash'
 import Options from './options'
+
 
 export default class LoadingWithScrollSelector extends React.Component{
   //定数は名詞
@@ -152,5 +154,5 @@ export default class LoadingWithScrollSelector extends React.Component{
 }
 
 LoadingWithScrollSelector.propTypes = {
-  options: React.PropTypes.array
+  options: PropTypes.array
 };
