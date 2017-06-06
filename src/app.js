@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import LoadingWithScrollSelector from './loading_with_scroll_selector'
+import LoadingWithScrollSelector from './loading_with_scroll_selector';
+
 class App extends React.Component{
   //デフォルト値を設定
   get defaultValue (){return 500}

@@ -1,8 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import PropTypes from 'prop-types'
-import { throttle } from 'lodash'
-import Options from './options'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
+import { throttle } from 'lodash';
+import Options from './options';
 
 
 export default class LoadingWithScrollSelector extends React.Component{

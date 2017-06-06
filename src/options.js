@@ -1,6 +1,6 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import PropTypes from 'prop-types'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 
 export default class Options extends React.Component{
   //barのheightを30%に設定してあるので
