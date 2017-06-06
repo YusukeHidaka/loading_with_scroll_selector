@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 export default class Options extends React.Component{
   //barのheightを30%に設定してあるので
-  get currentPosition (){return this.props.currentPosition*70+'%'}
+  get currentPosition (){return this.props.currentPosition * 70 + '%'}
 
   constructor (props){
     super(props);
