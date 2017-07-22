@@ -12,10 +12,12 @@ class App extends React.Component{
   }
 
   render(){
-    //ここで表示したい全体のリストを読み込む
+    //ここで表示したいリストをoptions配列に入れる
     let options = [];
     let i;
-    for(i=0;i<1000;i++){options.push({'key':i,'value':i+'です'})};
+    for(i=0;i<1000;i++){
+      options.push({'key':i,'value':i+'番目の選択肢'});
+    };
 
     return(
       <div className="main-object" style={{width: this.selectorWidth}}>

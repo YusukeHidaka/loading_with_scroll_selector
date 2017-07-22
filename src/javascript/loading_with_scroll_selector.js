@@ -16,10 +16,10 @@ export default class LoadingWithScrollSelector extends React.Component{
     this.state = {
       currentOptions: [],
       topCount: 1,
-      bottomCount: 1 ,
+      bottomCount: 1,
       selectedItem: this.props.targetNumber,
       showOptions: false,
-      currentPosition: this.props.options[this.props.targetNumber].key/(this.props.options.length)
+      currentPosition: this.props.options[this.props.targetNumber].key / (this.props.options.length)
     }
   }
 
@@ -30,7 +30,6 @@ export default class LoadingWithScrollSelector extends React.Component{
   }
 
   componentWillMount (){
-    // デバックしやすいように定数に宣言
     let startPoint = this.props.targetNumber - this.state.topCount * this.defaultLoadNum;
     let endPoint = this.props.targetNumber + this.state.bottomCount * this.defaultLoadNum;
     this.setState({currentOptions: this.props.options.slice(startPoint, endPoint)})
@@ -57,15 +56,15 @@ export default class LoadingWithScrollSelector extends React.Component{
   }
 
   addHighOptions (){
-    this.setState({bottomCount: this.state.bottomCount+=1})
+    this.setState({bottomCount: this.state.bottomCount+=1});
     this.sliceOptions();
   }
 
   sliceOptions (){
     let startPoint = this.props.targetNumber - this.state.topCount * this.extraLoadNum;
-    if(startPoint<=0){startPoint = 0;} // sliceは指定位置が負になるとバグるのでメタ
+    if(startPoint<=0){startPoint = 0;}; // sliceは指定位置が負になるとバグるのでメタ
     let endPoint = this.props.targetNumber + this.state.bottomCount * this.extraLoadNum;
-    this.setState({currentOptions: this.props.options.slice(startPoint,endPoint)})
+    this.setState({currentOptions: this.props.options.slice(startPoint,endPoint)});
   }
 
   scrollHandler (){
